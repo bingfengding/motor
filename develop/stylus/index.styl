@@ -1,0 +1,403 @@
+*
+	margin 0
+	padding 0
+	line-height 1
+	font-family SimHei
+	color #fff
+	box-sizing border-box
+a
+	text-decoration none
+	color inherit
+ul
+ol
+	list-style none
+em
+i
+	font-style normal
+body
+	background-color #1f2b37
+.sign
+	color #3e4750
+	font-size unit(6/16,"rem")
+	height unit(20/16,"rem")
+	line-height @height
+	padding-left unit(4/16,"rem")
+.sign-s
+	font-size unit(14/16,"rem")
+	text-align center
+header
+	width 100%
+	height unit(50/16, "rem")
+	background-color inherit
+	position fixed
+	top 0
+	z-index 1
+	.h_top
+		height 1rem
+		div
+			&:first-of-type
+				width unit(100/16,"rem")
+				height inherit
+				margin-left -(@width)
+				float left
+			&:last-of-type
+				width unit(100/16,"rem")
+				height inherit
+				margin-right -(@width)
+				float right
+		.h_date
+			font-size unit(10/16, "rem")
+			line-height 1rem
+			width 100%
+			height inherit
+			float left
+			text-align center
+	.h_menu
+		height unit(34/16, "rem")
+		padding 0 unit(66/16,"rem") 0 unit(26/16,"rem")
+		color #fff
+		span
+			height @height
+			display inline-block
+			text-align center
+			line-height @height
+		.h_return
+			float left
+			width unit(10/16,"rem")
+			margin-left -(@width)
+		.h_more
+			width unit(50/16,"rem")
+			float right
+			margin-right -(@width)
+		.h_name
+			width 100%
+			float left
+.home
+	width unit(290/16,"rem")
+	height unit(310/16,"rem")
+	margin 0 auto
+	margin-top unit(202/16, "rem")
+	margin-bottom unit(44/16,"rem")
+	.h_left
+		width unit(220/16,"rem")
+		float left
+		.lt
+			width inherit
+			.head
+				height unit(128/16,"rem")
+				.head-img
+					padding-top unit(60/16,"rem")
+					padding-left unit(10/16,"rem")
+					.head-file
+						display inline-block
+						width unit(44/16,"rem")
+						height @width
+						margin-right unit(10/16,"rem")
+						border-radius 50% 50%
+						vertical-align middle
+						background-repeat no-repeat
+						background-size 100% 100%
+						[type="file"]
+							width @height
+							height @width
+							opacity 0
+					p
+						display inline-block
+						height unit(44/16,"rem")
+						line-height unit(44/16,"rem")
+						font-size unit(10/16,"rem")
+						color #1598cd
+
+			.lb
+				height unit(90/16,"rem")
+				>div
+					background-color #1a232c
+					float left
+					height unit(90/16,"rem")
+				.money
+					width unit(110/16,"rem")
+					.money-s
+						height unit(70/16,"rem")
+						line-height @height
+
+				.buyTime
+					width unit(106/16,"rem")
+					margin-left unit(4/16,"rem")
+					.buyTime-s
+						line-height unit(70/16,"rem")
+
+		.add
+			background-color #1a232c
+			height unit(88/16,"rem")
+			margin-top unit(4/16,"rem")
+			.add-s
+				line-height unit(68/16,"rem")
+	.h_right
+		width unit(66/16,"rem")
+		float left
+		margin-left unit(4/16,"rem")
+		div
+			background-color #1a232c
+		.sex
+			height 5rem
+			.sex-s
+				line-height unit(60/16,"rem")
+		.occupation
+			height unit(134/16,"rem")
+			margin-top unit(4/16,"rem")
+			.occupation-s
+				line-height unit(114/16,"rem")
+		.age
+			height unit(88/16,"rem")
+			margin-top unit(4/16,"rem")
+			.age-s
+				line-height unit(68/16,"rem")
+.pre-header
+	.pre-header-b
+		position relative
+		width unit(100/16,"rem")
+		height 1.5rem
+		margin unit(2/16,"rem") auto
+		background-color rgba(193,150,107,0.5)
+		border-bottom 1px solid #151f28
+		.pre-header-t
+			position absolute
+			width @width
+			height @height
+			top unit(-2/16,"rem")
+			left unit(2/16,"rem")
+			line-height @height
+			text-align center
+			background-color rgba(193,150,107,1)
+			border-bottom 1px solid #151f28
+.pre-nav
+	margin-top 0.5rem
+	p
+		text-align center
+		&:first-of-type
+			color #18a0ba
+			font-size unit(8/16,"rem")
+		&:last-of-type
+			font-size unit(10/16,"rem")
+			color #e2e2e2
+.split
+	background-color #1a232c
+	width 100%
+	height unit(12/16,"rem")
+.models
+	height unit(340/16,"rem")
+	.place
+		margin 0 auto
+		margin-top 2.5rem
+		width 15rem
+		>div
+			width 5rem
+			float left
+			.place-car
+				width @width
+				height unit(30/16,"rem")
+				background-size 100%
+				background-repeat no-repeat
+			.place-name
+				color #a6a6a6
+				font-size 0.5rem
+				height unit(20/16,"rem")
+				text-align center
+				line-height unit(20/16,"rem")
+			.place-arabic
+				width unit(70/16,"rem")
+				height @width
+				line-height @width
+				font-size 2rem
+				text-align center
+				color #19232d
+				border 2px solid #19232d
+				border-radius 0.5rem
+		.place-num2
+			margin-top unit(34/16,"rem")
+		.place-num3
+			margin-top unit(68/16,"rem")
+
+
+
+.favourite
+	height unit(340/16,"rem")
+	.fav-main
+		width unit(240/16,"rem")
+		height @width
+		margin 0 auto
+		margin-top unit(30/16,"rem")
+		.fav-out
+			width unit(210/16,"rem")
+			height @width
+			border-radius 50% 50%
+			border 1px dashed #0fc6fd
+			margin 0 auto
+			position relative
+			.fav-mid
+				width unit(150/16,"rem")
+				height @width
+				border-radius 50% 50%
+				border 1px dashed #0e839f
+				margin 0 auto
+				margin-top unit(30/16,"rem")
+				position relative
+				.fav-inside
+					width unit(90/16,"rem")
+					height @width
+					border-radius 50% 50%
+					border 1px dashed #074863
+					margin 0 auto
+					margin-top unit(30/16,"rem")
+					position relative
+					.fav-head
+						width unit(34/16,"rem")
+						height @width
+						position relative
+						top unit(28/16,"rem")
+						left @top
+						a
+							height @width
+							display block
+							position absolute
+							background-repeat no-repeat
+							background-size 100% 100%
+						.fav-a1
+							width unit(34/16,"rem")
+							height @width
+						.fav-a2
+							width unit(24/16,"rem")
+							height @width
+							top unit(5/16,"rem")
+							left unit(5/16,"rem")
+						.fav-a3
+							width unit(34/16,"rem")
+							height @width
+
+
+.preference
+	.pre-main
+		width unit(300/16,"rem")
+		height @width
+		margin 0 auto
+		position relative
+		.pre-icon
+			width unit(70/16,"rem")
+			height @width
+			background-repeat no-repeat
+			background-size 100%
+			position absolute
+.eightImg
+	width 100%
+	height unit(352/16,"rem")
+	.ei-main
+		width unit(220/16,"rem")
+		height @width
+		margin 0 auto
+		position relative
+		padding-top 1.25rem
+		.ei-svg
+			width unit(140/16,"rem")
+			height @width
+			position absolute
+			top 2.5rem
+			left @top
+			img
+				width @width
+				height @width
+		ul
+			li
+				position absolute
+				text-align center
+				width unit(50/16,"rem")
+				img
+					vertical-align middle
+					width unit(14/16,"rem")
+					height 1rem
+				p
+					text-align center
+					font-size unit(8/16,"rem")
+				&:nth-of-type(1)
+					top unit(10/16,"rem")
+					left unit(90/16,"rem")
+				&:nth-of-type(2)
+					top unit(36/16,"rem")
+					left unit(150/16,"rem")
+				&:nth-of-type(3)
+					top unit(94/16,"rem")
+					left unit(170/16,"rem")
+				&:nth-of-type(4)
+					top unit(150/16,"rem")
+					left unit(150/16,"rem")
+				&:nth-of-type(5)
+					top unit(180/16,"rem")
+					left unit(86/16,"rem")
+				&:nth-of-type(6)
+					top unit(150/16,"rem")
+					left unit(24/16,"rem")
+				&:nth-of-type(7)
+					top unit(94/16,"rem")
+					left unit(0/16,"rem")
+				&:nth-of-type(8)
+					top unit(36/16,"rem")
+					left unit(20/16,"rem")
+.recommend
+	height unit(240/16,"rem")
+	.re-word
+		margin-top unit(50/16,"rem")
+		height 1rem
+		p
+			text-align center
+			color #c1966b
+	.list
+		width 100%
+		overflow hidden
+		margin-top 2.5rem
+		position relative
+		ul
+			width 45rem
+			height 5rem
+			overflow hidden
+			position relative
+			left 0
+			li
+				width unit(90/16,"rem")
+				height @height
+				float left
+				a
+					width @width
+					height unit(44/16,"rem")
+					display inline-block
+					background-size 100%
+					background-repeat no-repeat
+					background-position unit(5/16,"rem") 0
+				p
+					height unit(12/16,"rem")
+					font-size 0.5rem
+					color #a6a6a6
+					overflow hidden
+					text-overflow ellipsis
+					white-space:nowrap
+					text-align center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
